@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Three Types of Functions</title>
+</head>
+<body>
+<h2>Click buttons to invoke different function types</h2>
+<button onclick="greetDeclaration()">Function Declaration</button>
+<button onclick="greetDefinition()">Function Definition</button>
+<button onclick="greetArrow()">Arrow Function</button>
+<p id="output"></p>
+<script>
+const output = document.getElementById("output");
+
+function greetDeclaration() {
+    output.innerText = "Hello from Function Declaration!";
+}
+
+const greetDefinition = function() {
+    output.innerText = "Hello from Function Definition (Expression)!";
+};
+
+const greetArrow = () => {
+    output.innerText = "Hello from Arrow Function!";
+};
+</script>
+</body>
+</html>
